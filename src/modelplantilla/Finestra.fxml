@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="530.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelplantilla.FinestraController">
+    <stylesheets>
+        <URL value="@finestra.css" />
+    </stylesheets>
+   <children>
+      <TextArea fx:id="missatgetxt" editable="false" layoutX="13.0" layoutY="81.0" prefHeight="125.0" prefWidth="518.0" text="Introdueix usuari i contrasenya per iniciar sessió">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <AnchorPane fx:id="loginpane" prefHeight="81.0" prefWidth="545.0">
+         <children>
+            <Label layoutX="22.0" layoutY="33.0" text="Username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="237.0" layoutY="31.0" text="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginbutton" layoutX="448.0" layoutY="28.0" mnemonicParsing="false" onAction="#validaUsuari" text="Login">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="usernametxt" layoutX="111.0" layoutY="28.0" prefHeight="24.0" prefWidth="102.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordtxt" layoutX="322.0" layoutY="27.0" prefHeight="29.0" prefWidth="102.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="caixerpane" layoutY="207.0" prefHeight="241.0" prefWidth="545.0">
+         <children>
+            <Button layoutX="16.0" layoutY="76.0" mnemonicParsing="false" onAction="#mostrarSaldo" text="Consulta saldo">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="16.0" layoutY="110.0" mnemonicParsing="false" onAction="#ingressar" text="Ingressa diners">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="16.0" layoutY="145.0" mnemonicParsing="false" onAction="#extreure" text="Extreu diners">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="16.0" layoutY="179.0" mnemonicParsing="false" onAction="#logout" text="Sortir">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="399.0" layoutY="76.0" mnemonicParsing="false" onAction="#euros100" text="100">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="359.0" layoutY="76.0" mnemonicParsing="false" onAction="#euros50" text="50">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="319.0" layoutY="76.0" mnemonicParsing="false" onAction="#euros20" text="20">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="279.0" layoutY="76.0" mnemonicParsing="false" onAction="#euros10" text="10">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="249.0" layoutY="76.0" mnemonicParsing="false" onAction="#euros5" text="5">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <TextField fx:id="quantitattxt" layoutX="249.0" layoutY="148.0" prefHeight="24.0" prefWidth="282.0" />
+            <Label layoutX="16.0" layoutY="32.0" text="Operacions">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="32.0" text="Escull Bitllet">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="467.0" layoutY="76.0" mnemonicParsing="false" onAction="#euros0" text="Reset">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Label layoutX="249.0" layoutY="115.0" text="Total">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
